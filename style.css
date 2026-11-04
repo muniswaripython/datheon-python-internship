@@ -1,0 +1,193 @@
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #172554;
+    padding: 20px 8%;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Theme Button */
+#themeToggle {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* All Sections */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    background-color: #dbeafe;
+    padding: 120px 10%;
+}
+
+#home h1 {
+    font-size: 42px;
+    color: #172554;
+}
+
+#home h2 {
+    margin: 15px;
+    color: #2563eb;
+}
+
+/* Section Headings */
+section h2 {
+    color: #1d4ed8;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #172554;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #111827;
+    color: white;
+}
+
+body.dark section {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark section h2,
+body.dark #home h1 {
+    color: #93c5fd;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 25px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Cards */
+body.dark .skill-card,
+body.dark .project-card {
+    background-color: #374151;
+    color: white;
+}
+
+/* Contact Section */
+#contact p {
+    margin: 10px;
+}
